@@ -319,7 +319,6 @@ h3 {
 .project-links > a {
     animation-duration: 1.5s;
     animation-name: background;
-    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
