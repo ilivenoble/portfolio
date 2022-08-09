@@ -109,6 +109,12 @@ h3 {
     margin-left: 1em;
 }
 
+.open-to-work span {
+    font-size: var(--fs-h2);
+    color: aquamarine;
+    margin-left: 1.5em;
+}
+
 /*  My skills section  */
 
 .skillssection__title, .project-section-title {
@@ -302,7 +308,7 @@ h3 {
 /* ANIMATION */
 
 * {
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
     animation-name: body;
 }
 
