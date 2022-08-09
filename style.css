@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Source+Code+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700&family=K2D:wght@400;700&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Poppins:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap');
 
 *,
 *::before,
@@ -7,7 +7,7 @@
 }
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-primary: 'K2D', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg: 300;
@@ -181,6 +181,15 @@ h3 {
     text-decoration: #032835;
 }
 
+.view-more a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #032835;
+    font-size: var(--fs-h3);
+    font-weight: bold;
+}
+
 /*  My Footer section  */
 
 .footer {
@@ -213,6 +222,16 @@ h3 {
     padding: 0.4em;
 }
 
+.copyright {
+    margin: 1.5em 0;
+}
+.copyright .copyright-name  {
+    font-weight: bold;
+    color: aquamarine;
+}
+
+
+/*  My Navbar section  */
 .navbar .nav-item a {
     text-decoration: none;
     color: #303030;
@@ -276,5 +295,40 @@ h3 {
     .project-links {
         justify-content: start;
         gap: 4em
+    }
+}
+
+
+/* ANIMATION */
+
+* {
+    animation-duration: 1.5s;
+    animation-name: body;
+}
+
+@keyframes body {
+    from {
+        opacity: 0.45;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.project-links > a {
+    animation-duration: 1.5s;
+    animation-name: background;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background {
+    from {
+        background-color: #2992b8;
+    }
+
+    to {
+        background-color: #303030;
     }
 }
